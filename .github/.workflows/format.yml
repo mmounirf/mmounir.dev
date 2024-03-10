@@ -1,0 +1,11 @@
+name: Format
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    - name: Run Biome
+      uses: biomejs/setup-biome@v2
+      run: biome ci .
