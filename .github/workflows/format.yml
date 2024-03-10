@@ -1,11 +1,18 @@
-name: Format
+name: Code quality
 
-on: [push]
+on:
+  push:
+  pull_request:
 
 jobs:
-  build:
+  quality:
     runs-on: ubuntu-latest
-
-    - name: Run Biome
-      uses: biomejs/setup-biome@v2
-      run: biome ci .
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Biome
+        uses: biomejs/setup-biome@v2
+        with:
+          version: latest
+      - name: Run Biome
+        run: biome ci .
