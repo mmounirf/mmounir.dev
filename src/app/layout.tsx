@@ -18,7 +18,7 @@ const playfairDisplayFont = Playfair_Display({
 
 export const metadata: Metadata = {
 	title: "Mohamed Mounir",
-	description: "Senior software engineer",
+	description: "Senior software engineer with over a decade of experience in the frontend domain.",
 };
 
 export default function RootLayout({
