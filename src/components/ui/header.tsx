@@ -25,6 +25,7 @@ export function Header() {
 							target="_blank"
 							rel="noopener noreferrer"
 							className="gap-1"
+							prefetch={false}
 						>
 							<IconDownload size="16" />
 							Resume
