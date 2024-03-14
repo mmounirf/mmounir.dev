@@ -1,8 +1,13 @@
+import { ThemeProvider } from "@/components/theme-provider";
+import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Open_Sans } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const openSansFont = Open_Sans({
+	subsets: ["latin"],
+	variable: "--font-open-sans",
+});
 
 export const metadata: Metadata = {
 	title: "Mohamed Mounir",
@@ -15,8 +20,12 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en">
-			<body className={inter.className}>{children}</body>
+		<html lang="en" suppressHydrationWarning>
+			<body className={cn("min-h-screen font-sans antialiased", openSansFont.variable)}>
+				<ThemeProvider storageKey="@mmounir.dev/theme" attribute="class" defaultTheme="system" enableSystem>
+					{children}
+				</ThemeProvider>
+			</body>
 		</html>
 	);
 }

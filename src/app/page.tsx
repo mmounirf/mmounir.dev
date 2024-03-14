@@ -1,9 +1,11 @@
+import { ThemeSwitcher } from "@/components/ui/theme-switcher";
 import styles from "./page.module.css";
 
 export default function Home() {
 	return (
 		<main className={styles.main}>
 			<h1>Hi there</h1>
+			<ThemeSwitcher />
 		</main>
 	);
 }
