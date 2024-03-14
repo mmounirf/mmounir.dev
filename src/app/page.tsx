@@ -8,7 +8,7 @@ export default function Home() {
 				<div className="flex flex-col gap-24">
 					<div>
 						<h2 className="flex gap-4 font-display text-9xl">
-							Hi there <div className="motion-safe:animate-bounce">👋🏻</div>
+							Hi there <div className="absolute right-10 motion-safe:animate-bounce">👋🏻</div>
 						</h2>
 						<h1 className="font-display text-7xl">I'm Mohamed Mounir</h1>
 					</div>
