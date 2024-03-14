@@ -38,6 +38,7 @@ const ToggleGroupItem = React.forwardRef<
 					size: context.size || size,
 				}),
 				className,
+				"w-7 h-7 p-0 rounded-full hover:rounded-full",
 			)}
 			{...props}
 		>

@@ -18,7 +18,12 @@ export function ThemeSwitcher() {
 	}
 
 	return (
-		<ToggleGroup type="single" size="sm" value={theme}>
+		<ToggleGroup
+			type="single"
+			size="sm"
+			value={theme}
+			className="flex items-center justify-center gap-1 border rounded-full p-1"
+		>
 			<ToggleGroupItem value="system" onClick={() => setTheme("system")}>
 				<IconDeviceImac size="16" />
 			</ToggleGroupItem>

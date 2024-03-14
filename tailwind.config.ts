@@ -36,11 +36,13 @@ function addVariablesForColors({
 	addBase,
 	theme,
 }: {
-	matchUtilities: PluginAPI["addBase"];
+	addBase: PluginAPI["addBase"];
 	theme: PluginAPI["theme"];
 }) {
 	const allColors = flattenColorPalette(theme("colors"));
-	const newVars = Object.fromEntries(Object.entries(allColors).map(([key, val]) => [`--${key}`, val]));
+	const newVars = Object.fromEntries(
+		Object.entries<Record<string, string>>(allColors).map(([key, val]) => [`--${key}`, val]),
+	);
 
 	addBase({
 		":root": newVars,
@@ -52,6 +54,10 @@ const config = {
 	content: ["./components/**/*.{ts,tsx}", "./app/**/*.{ts,tsx}", "./src/**/*.{ts,tsx}"],
 	prefix: "",
 	theme: {
+		fontFamily: {
+			display: ["var(--font-display)"],
+			body: ["var(--font-body)"],
+		},
 		container: {
 			center: true,
 			padding: "2rem",
