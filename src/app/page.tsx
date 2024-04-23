@@ -1,19 +1,20 @@
 import { Footer, Header } from "@/components/ui";
 import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
 import { IconBraces, IconMessage, IconRoad, IconWriting } from "@tabler/icons-react";
-import Skills from "./components/Skills";
+import { TechArsenal } from "./components";
+import { GetInTouch } from "./components/get-in-touch";
 
 export default function Home() {
 	return (
 		<div className="relative flex min-h-screen flex-col dark:bg-black bg-white dark:bg-dot-white/[0.2] bg-dot-black/[0.2]">
 			<Header />
 			<main className="container py-8 flex flex-col flex-1 justify-center ">
-				<BentoGrid className="max-w-4xl mx-auto md:auto-rows-[15rem]">
+				<BentoGrid className="max-w-4xl mx-auto md:auto-rows-auto">
 					<BentoGridItem
 						href="/skills"
 						title="Tech Arsenal"
 						description="Building exceptional experiences with a powerful tech stack."
-						header={<Skills />}
+						header={<TechArsenal />}
 						className="md:col-span-2"
 						icon={<IconBraces size={20} className="text-neutral-500" />}
 					/>
@@ -21,11 +22,10 @@ export default function Home() {
 						href="/"
 						title="Get in touch!"
 						description="Connect for your next project or tech chat."
-						header={<h1>Header</h1>}
+						header={<GetInTouch />}
 						className="md:col-span-1"
 						icon={<IconMessage size={20} className="text-neutral-500" />}
 					/>
-
 					<BentoGridItem
 						href="/"
 						title="Technical Scribbles"
