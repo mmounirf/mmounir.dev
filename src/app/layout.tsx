@@ -3,12 +3,17 @@ import { cn } from "@/utils";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
-import { Open_Sans, Playfair_Display } from "next/font/google";
+import { Noto_Sans, Noto_Sans_Mono, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
-const openSansFont = Open_Sans({
+const notoSansFont = Noto_Sans({
 	subsets: ["latin"],
 	variable: "--font-body",
+	display: "swap",
+});
+const notoSansMonoFont = Noto_Sans_Mono({
+	subsets: ["latin"],
+	variable: "--font-mono",
 	display: "swap",
 });
 
@@ -29,8 +34,12 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en" className={cn(openSansFont.variable, playfairDisplayFont.variable)} suppressHydrationWarning>
-			<body className="min-h-screen font-sans antialiased">
+		<html
+			lang="en"
+			className={cn(notoSansFont.variable, playfairDisplayFont.variable, notoSansMonoFont.variable)}
+			suppressHydrationWarning
+		>
+			<body className="min-h-screen font-body antialiased">
 				<ThemeProvider storageKey="@mmounir.dev/theme" attribute="class" defaultTheme="system" enableSystem>
 					{children}
 					<Analytics />

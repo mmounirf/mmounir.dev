@@ -57,6 +57,7 @@ const config = {
 		fontFamily: {
 			display: ["var(--font-display)"],
 			body: ["var(--font-body)"],
+			mono: ["var(--font-mono)"],
 		},
 		container: {
 			center: true,
