@@ -14,7 +14,7 @@ export default function Home() {
 					</div>
 					<div>
 						<h2 className="font-body text-4xl">
-							Senior software engineer with over a decade of experience in the frontend domain. Based between Germany 🇩🇪
+							Staff software engineer with over a decade of experience in the frontend domain. Based between Germany 🇩🇪
 							and Egypt 🇪🇬.
 						</h2>
 					</div>
