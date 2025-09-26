@@ -11,7 +11,7 @@
 		"build": "next build",
 		"start": "next start",
 		"check": "biome check .",
-		"fix": "biome check --apply ."
+		"fix": "biome check --write"
 	},
 	"dependencies": {
 		"@radix-ui/react-slot": "^1.0.2",

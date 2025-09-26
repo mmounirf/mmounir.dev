@@ -1,8 +1,8 @@
-import { Button } from "@/components/ui";
+import { IconDownload } from "@tabler/icons-react";
 import Link from "next/link";
 
 import { Github, Linkedin } from "@/components/icons";
-import { IconDownload } from "@tabler/icons-react";
+import { Button } from "@/components/ui";
 
 export function Header() {
 	return (

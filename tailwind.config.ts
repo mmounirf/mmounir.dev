@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss";
 import type { PluginAPI } from "tailwindcss/types/config";
+
 const svgToDataUri = require("mini-svg-data-uri");
 const { default: flattenColorPalette } = require("tailwindcss/lib/util/flattenColorPalette");
 
@@ -32,13 +33,7 @@ function svgGridBg({
 	);
 }
 
-function addVariablesForColors({
-	addBase,
-	theme,
-}: {
-	addBase: PluginAPI["addBase"];
-	theme: PluginAPI["theme"];
-}) {
+function addVariablesForColors({ addBase, theme }: { addBase: PluginAPI["addBase"]; theme: PluginAPI["theme"] }) {
 	const allColors = flattenColorPalette(theme("colors"));
 	const newVars = Object.fromEntries(
 		Object.entries<Record<string, string>>(allColors).map(([key, val]) => [`--${key}`, val]),

@@ -1,9 +1,9 @@
-import { ThemeProvider } from "@/components/theme-provider";
-import { cn } from "@/lib/utils";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import { Open_Sans, Playfair_Display } from "next/font/google";
+import { ThemeProvider } from "@/components/theme-provider";
+import { cn } from "@/lib/utils";
 import "./globals.css";
 
 const openSansFont = Open_Sans({

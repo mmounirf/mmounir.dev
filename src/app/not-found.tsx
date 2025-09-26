@@ -1,7 +1,7 @@
-import { Button, Footer, Header } from "@/components/ui";
-import { Card, CardHeader } from "@/components/ui/card";
 import { IconChevronLeft } from "@tabler/icons-react";
 import Link from "next/link";
+import { Button, Footer, Header } from "@/components/ui";
+import { Card, CardHeader } from "@/components/ui/card";
 
 export default function NotFound() {
 	return (
