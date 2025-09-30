@@ -16,7 +16,7 @@
 	},
 	"files": {
 		"ignoreUnknown": true,
-		"includes": ["**/*.ts", "**/*.tsx", "**/*.json"]
+		"includes": ["**/*.ts", "**/*.tsx", "**/*.json", "!cloudflare-env.d.ts"]
 	},
 	"vcs": {
 		"enabled": true,
