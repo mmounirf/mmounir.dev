@@ -14,7 +14,10 @@
 		"fix": "biome check --write",
 		"build:worker": "opennextjs-cloudflare build",
 		"preview:worker": "opennextjs-cloudflare preview",
-		"preview": "npm run build:worker && npm run preview:worker"
+		"deploy:worker": "npm run build:worker && opennextjs-cloudflare deploy",
+		"upload:worker": "npm run build:worker && opennextjs-cloudflare upload",
+		"preview": "npm run build:worker && npm run preview:worker",
+		"cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"
 	},
 	"dependencies": {
 		"@radix-ui/react-slot": "^1.2.3",
