@@ -1,5 +1,3 @@
-import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import { Open_Sans, Playfair_Display } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
@@ -33,8 +31,6 @@ export default function RootLayout({
 			<body className="min-h-screen font-sans antialiased">
 				<ThemeProvider storageKey="@mmounir.dev/theme" attribute="class" defaultTheme="system" enableSystem>
 					{children}
-					<Analytics />
-					<SpeedInsights />
 				</ThemeProvider>
 			</body>
 		</html>
