@@ -11,7 +11,10 @@
 		"build": "next build",
 		"start": "next start",
 		"check": "biome check .",
-		"fix": "biome check --write"
+		"fix": "biome check --write",
+		"build:worker": "opennextjs-cloudflare build",
+		"preview:worker": "opennextjs-cloudflare preview",
+		"preview": "npm run build:worker && npm run preview:worker"
 	},
 	"dependencies": {
 		"@radix-ui/react-slot": "^1.2.3",
@@ -28,6 +31,7 @@
 		"tailwindcss-animate": "^1.0.7"
 	},
 	"devDependencies": {
+		"@opennextjs/cloudflare": "^1.9.0",
 		"@biomejs/biome": "^2.2.4",
 		"@types/node": "^24.5.2",
 		"@types/react": "^19.1.13",
@@ -37,6 +41,7 @@
 		"postcss": "^8.4.35",
 		"postcss-replace": "^2.0.1",
 		"tailwindcss": "^3.4.1",
-		"typescript": "^5.9.2"
+		"typescript": "^5.9.2",
+		"wrangler": "^4.40.3"
 	}
 }
