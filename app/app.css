@@ -1,5 +1,23 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/sans-serif.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Playfair";
+  src: url("/fonts/serif.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist Mono";
+  src: url("/fonts/mono.woff2") format("woff2");
+  font-display: swap;
+}
+
 :root {
   --font-sans: "Roboto", sans-serif;
   --font-serif: "Playfair", serif;
