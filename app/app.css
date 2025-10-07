@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-@theme {
+:root {
   --font-sans: "Roboto", sans-serif;
   --font-serif: "Playfair", serif;
   --font-mono: "Geist Mono", monospace;
@@ -8,10 +8,28 @@
 
 html,
 body {
-  @apply bg-slate-50 dark:bg-slate-950;
-  @apply text-slate-950 dark:text-slate-50;
+  background-color: var(--color-slate-50);
+  color: var(--color-slate-800);
+  font-family: var(--font-sans);
+  color-scheme: light;
+}
 
-  @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
+  html,
+  body {
+    background-color: var(--color-slate-950);
+    color: var(--color-slate-50);
     color-scheme: dark;
+  }
+}
+
+a {
+  text-decoration: underline;
+  color: var(--color-slate-600);
+}
+
+@media (prefers-color-scheme: dark) {
+  a {
+    color: var(--color-slate-400);
   }
 }
