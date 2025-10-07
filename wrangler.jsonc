@@ -5,5 +5,11 @@
   "main": "./workers/app.ts",
   "observability": {
     "enabled": true
-  }
+  },
+  "routes": [
+    {
+      "pattern": "mmounir.dev",
+      "custom_domain": true
+    }
+  ]
 }
