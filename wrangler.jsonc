@@ -3,6 +3,7 @@
   "name": "mmounir-dev",
   "compatibility_date": "2025-04-04",
   "main": "./workers/app.ts",
+  "workers_dev": true,
   "observability": {
     "enabled": true
   },
