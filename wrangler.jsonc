@@ -10,10 +10,6 @@
     {
       "pattern": "mmounir.dev",
       "custom_domain": true
-    },
-    {
-      "pattern": "mou.is-a.dev",
-      "custom_domain": true
     }
   ]
 }
