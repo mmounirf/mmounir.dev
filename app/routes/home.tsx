@@ -20,7 +20,7 @@ export default function Home() {
         Staff software engineer with over a decade of experience in the frontend domain.
       </p>
       <p className="text-sm md:text-xl">Based between Germany 🇩🇪 and Egypt 🇪🇬.</p>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-1 md:gap-4 mt-4 text-sm md:text-base">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-1 md:gap-4 mt-4 text-sm md:text-base font-mono">
         <a
           title="Github"
           href="https://github.com/mmounirf/"
