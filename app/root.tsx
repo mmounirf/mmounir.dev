@@ -9,7 +9,6 @@ import {
 
 import type { Route } from "./+types/root";
 import "./app.css";
-import Preloader from "./ui/client/Preloader";
 
 export const links: Route.LinksFunction = () => [
   {
@@ -60,7 +59,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
-        <Preloader>{children}</Preloader>
+        {children}
         <ScrollRestoration />
         <Scripts />
       </body>
