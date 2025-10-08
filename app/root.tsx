@@ -9,6 +9,7 @@ import {
 
 import type { Route } from "./+types/root";
 import "./app.css";
+import Preloader from "./ui/client/Preloader";
 
 export const links: Route.LinksFunction = () => [
   {
@@ -29,7 +30,7 @@ export const links: Route.LinksFunction = () => [
     as: "font",
     type: "font/woff2",
     crossOrigin: "anonymous",
-    fetchpriority: "high",
+    fetchPriority: "high",
   },
   {
     rel: "preload",
@@ -37,7 +38,7 @@ export const links: Route.LinksFunction = () => [
     as: "font",
     type: "font/woff2",
     crossOrigin: "anonymous",
-    fetchpriority: "high",
+    fetchPriority: "high",
   },
   {
     rel: "preload",
@@ -45,7 +46,7 @@ export const links: Route.LinksFunction = () => [
     as: "font",
     type: "font/woff2",
     crossOrigin: "anonymous",
-    fetchpriority: "low",
+    fetchPriority: "low",
   },
 ];
 
@@ -59,7 +60,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
-        {children}
+        <Preloader>{children}</Preloader>
         <ScrollRestoration />
         <Scripts />
       </body>
