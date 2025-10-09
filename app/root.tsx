@@ -29,7 +29,7 @@ export const links: Route.LinksFunction = () => [
     as: "font",
     type: "font/woff2",
     crossOrigin: "anonymous",
-    fetchpriority: "high",
+    fetchPriority: "high",
   },
   {
     rel: "preload",
@@ -37,7 +37,7 @@ export const links: Route.LinksFunction = () => [
     as: "font",
     type: "font/woff2",
     crossOrigin: "anonymous",
-    fetchpriority: "high",
+    fetchPriority: "high",
   },
   {
     rel: "preload",
@@ -45,7 +45,7 @@ export const links: Route.LinksFunction = () => [
     as: "font",
     type: "font/woff2",
     crossOrigin: "anonymous",
-    fetchpriority: "low",
+    fetchPriority: "low",
   },
 ];
 
