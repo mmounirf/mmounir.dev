@@ -13,17 +13,17 @@
     "lint": "npx @biomejs/biome check --write"
   },
   "dependencies": {
-    "@react-router/node": "^7.9.2",
-    "@react-router/serve": "^7.9.2",
+    "@react-router/node": "^7.9.4",
+    "@react-router/serve": "^7.9.4",
     "isbot": "^5.1.31",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
-    "react-router": "^7.9.2"
+    "react-router": "^7.9.4"
   },
   "devDependencies": {
     "@biomejs/biome": "2.2.5",
     "@cloudflare/vite-plugin": "^1.13.12",
-    "@react-router/dev": "^7.9.2",
+    "@react-router/dev": "^7.9.4",
     "@tailwindcss/vite": "^4.1.13",
     "@types/node": "^24",
     "@types/react": "^19.1.13",
