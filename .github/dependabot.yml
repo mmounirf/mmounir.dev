@@ -9,3 +9,15 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
+    groups:
+      react-router:
+        patterns:
+          - "@react-router/*"
+          - "react-router"
+          - "react-router-dom"
+      react:
+        patterns:
+          - "react"
+          - "react-dom"
+          - "@types/react"
+          - "@types/react-dom"
